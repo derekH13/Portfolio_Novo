@@ -26,7 +26,7 @@ export default function CardProjetos({
         <img src={img} alt="" />
         <div className="cardProjeto_tecnologias">
           {frameworks.map((item) => (
-            <span className={item}>{item}</span>
+            <span className={item.toLowerCase()}>{item}</span>
           ))}
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function CardProjetos({
           <Texto>{descricao}</Texto>
         </div>
         <div className="cardProjeto_content_btn">
-          <a href={link}>
+          <a href={link} target="_blank">
             <ButtonPrimary>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ export default function CardProjetos({
               GitHub
             </ButtonPrimary>
           </a>
-          <a href={github}>
+          <a href={github} target="_blank">
             <ButtonPrimary>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

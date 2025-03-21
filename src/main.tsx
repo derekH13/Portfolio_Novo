@@ -10,6 +10,7 @@ import Competencias from "./shared/containers/Competencias";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import Projetos from "./shared/containers/projetos";
+import Footer from "./shared/containers/footer";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -83,6 +84,7 @@ createRoot(document.getElementById("root")!).render(
         />
         <Competencias />
         <Projetos />
+        <Footer />
       </section>
     </Provider>
   </StrictMode>

@@ -80,8 +80,8 @@ export const TitleSmall = styled(Title)`
 
 export const Texto = styled.p<propsTitle>`
   font-size: 18px;
-  font-weight: 100;
-  color: ${propsTitle => propsTitle.color  ? propsTitle.color : Color.branco};
+  font-weight: 200;
+  color: ${propsTitle => propsTitle.color  ? propsTitle.color : Color.cinza};
   line-height: 26px;
 `
 
