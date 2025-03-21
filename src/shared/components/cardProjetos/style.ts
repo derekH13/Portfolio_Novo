@@ -10,6 +10,12 @@ display: flex;
 flex-direction: ${props => props.flexRevers ? 'row-reverse' : 'row'};
   gap: 40px;
 
+  @media(max-width: 1000px){
+    flex-direction: column;
+    width: 95%;
+  margin: 0 auto;
+  }
+
 .cardProjeto_content{
     display: flex;
     flex-direction: column;
@@ -19,8 +25,15 @@ flex-direction: ${props => props.flexRevers ? 'row-reverse' : 'row'};
       gap: 18px;
       padding-top: 40px;
 
+
+
       ${ButtonPrimary}{
         width: 200px;
+
+        @media(max-width: 470px){
+          width: auto;
+          padding: 0px 20px;
+          }
       }
     }
 
@@ -34,14 +47,24 @@ flex-direction: ${props => props.flexRevers ? 'row-reverse' : 'row'};
 
 
 .cardProjeto_imagem{
-min-width: 500px;
+  min-width: 500px;
 
+
+  @media(max-width: 1000px){
+      width: 100%;
+      min-width: auto;
+  }
 
 
 img{
     width: 100%;
     height: 300px;
     object-fit: cover;
+
+    @media(max-width: 1000px){
+      height: auto;
+      margin: 0 auto;
+  }
 }
 
 .cardProjeto_tecnologias{

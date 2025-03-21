@@ -7,10 +7,18 @@ padding-top: 100px;
 
 .competencias_tecnologias{
     margin-top: 50px;
-
+    margin-bottom: 120px;
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(162px, 163PX));
     gap: 20px;
+    
+    @media(max-width: 630px){
+        bottom: auto;
+        right: auto;
+        margin: 0 auto;
+        justify-content: center;
+    }
 
     &_card{
         padding: 20px;
@@ -43,9 +51,11 @@ padding-top: 100px;
 }
 
 .tab_competancias{
+    padding-bottom: 40px;
     padding-top: 20px;
     display: flex;
     gap: 30px;
+     flex-wrap: wrap;
 
 
     button{
@@ -65,6 +75,7 @@ padding-top: 100px;
 
         cursor: pointer;
         transition: all .3s ease;
+        
 
         &.active{
         border-bottom: solid 2px ${Color.branco};

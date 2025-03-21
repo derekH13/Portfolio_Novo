@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .interface{
     max-width: 1080px;
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
   }
 `

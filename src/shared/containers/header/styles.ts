@@ -24,6 +24,12 @@ nav{
     align-items: center;
     padding-top: 30px;
 
+    .mobille{
+        @media(max-width: 690px){
+        display: none;
+    }
+    }
+
     ul{
         display: flex;
         gap: 44px;

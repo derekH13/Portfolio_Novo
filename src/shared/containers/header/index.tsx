@@ -17,7 +17,6 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           src="/assets/images/nav.png"
-          alt="Imagem de uma bússola com a agulha apontando para o norte, destacando a cor azul no centro do logo. A bússola representa a orientação e o direcionamento, com a cor azul enfatizando o compromisso da empresa em guiar seus clientes com confiança e precisão. O design sugere que a empresa tem o foco em ajudar a direcionar para o caminho certo."
         />
       )}
       <nav className="interface">
@@ -27,7 +26,7 @@ export default function Header() {
             DEREK <span>HENRIQUE</span>
           </h5>
         </div>
-        <ul>
+        <ul className="mobille">
           <li>
             <a className="link" href="">
               Competências

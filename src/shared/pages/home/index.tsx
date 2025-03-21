@@ -21,8 +21,12 @@ export default function Home() {
 
   return (
     <s.StyleHome>
-      <div className="interface home" ref={ref}>
-        <img src="/assets/images/Vector 2.png" className="blur_fundo" />
+      <div className="interface home">
+        <img
+          src="/assets/images/Vector 2.png"
+          ref={ref}
+          className="blur_fundo"
+        />
         <div className="home_container">
           <div className="home_content">
             <Title tag={true}>
