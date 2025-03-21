@@ -1,41 +1,116 @@
+import { useEffect, useState } from "react";
 import { TitleSmall } from "../../../styles_Global/style";
-import Card from "../../components/card";
 import * as s from "./style";
+import { frontendObj, backendObj, bancoObj } from "../../../data";
+import { mostarCompetencia } from "../../../redux/reducer/competencia";
+import { useDispatch, useSelector } from "react-redux";
+import { RootReducer } from "../../../redux/store";
 
 export default function Competencias() {
+  const [area, setArea] = useState("frontend");
+
+  const btnCompetencia = useSelector(
+    (state: RootReducer) => state.mostarCompetencia.itens
+  );
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    setArea(btnCompetencia);
+  }, [btnCompetencia]);
+
   return (
-    <s.estiloCompetencias>
+    <s.estiloCompetencias id="competencia">
       <div className="interface">
         <TitleSmall>
           Minhas <span>Competências</span>
         </TitleSmall>
 
         <div className="tab_competancias">
-          <button>Front End</button>
-          <button>UI/UX</button>
-          <button>Back End</button>
+          <button
+            className={btnCompetencia === "frontend" ? `active` : ""}
+            onClick={() => dispatch(mostarCompetencia("frontend"))}
+          >
+            Front End
+          </button>
+          <button
+            className={btnCompetencia === "backend" ? `active` : ""}
+            onClick={() => dispatch(mostarCompetencia("backend"))}
+          >
+            Back End
+          </button>
+          <button
+            className={btnCompetencia === "banco" ? `active` : ""}
+            onClick={() => dispatch(mostarCompetencia("banco"))}
+          >
+            Banco de Dados
+          </button>
+          <button
+            className={btnCompetencia === "outros" ? `active` : ""}
+            onClick={() => dispatch(mostarCompetencia("outros"))}
+          >
+            Outras Tecnologias
+          </button>
         </div>
 
-        <div className="competencias_tecnologias">
-          <div className="competencias_tecnologias_card">
-            <img src="/assets/images/frontend/frontend (1).png" alt="" />
+        {area == "frontend" && (
+          <div className="competencias_tecnologias">
+            {frontendObj.map((item) => (
+              <div className="competencias_tecnologias_card">
+                <img src={item.img} alt="" />
+                <h5>{item.title}</h5>
+              </div>
+            ))}
           </div>
-          <div className="competencias_tecnologias_card">
-            <img src="/assets/images/frontend/frontend (1).png" alt="" />
+        )}
+        {area == "outros" && (
+          <div className="competencias_tecnologias">
+            <div className="competencias_tecnologias_card">
+              <img src="/assets/images/frontend/ui/ux (1).png" alt="" />
+              <h5>TYPESCRIPT</h5>
+            </div>
+            <div className="competencias_tecnologias_card">
+              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
+              <h5>TYPESCRIPT</h5>
+            </div>
+            <div className="competencias_tecnologias_card">
+              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
+              <h5>TYPESCRIPT</h5>
+            </div>
+            <div className="competencias_tecnologias_card">
+              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
+              <h5>TYPESCRIPT</h5>
+            </div>
+            <div className="competencias_tecnologias_card">
+              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
+              <h5>TYPESCRIPT</h5>
+            </div>
+            <div className="competencias_tecnologias_card">
+              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
+              <h5>TYPESCRIPT</h5>
+            </div>
           </div>
-          <div className="competencias_tecnologias_card">
-            <img src="/assets/images/frontend/frontend (1).png" alt="" />
+        )}
+        {area == "backend" && (
+          <div className="competencias_tecnologias">
+            {backendObj.map((item) => (
+              <div className="competencias_tecnologias_card">
+                <img src={item.img} alt="" />
+                <h5>{item.title}</h5>
+              </div>
+            ))}
           </div>
-          <div className="competencias_tecnologias_card">
-            <img src="/assets/images/frontend/frontend (1).png" alt="" />
+        )}
+        {area == "banco" && (
+          <div className="competencias_tecnologias">
+            {bancoObj.map((item) => (
+              <div className="competencias_tecnologias_card">
+                <img src={item.img} alt="" />
+                <h5>{item.title}</h5>
+              </div>
+            ))}
           </div>
-          <div className="competencias_tecnologias_card">
-            <img src="/assets/images/frontend/frontend (1).png" alt="" />
-          </div>
-          <div className="competencias_tecnologias_card">
-            <img src="/assets/images/frontend/frontend (1).png" alt="" />
-          </div>
-        </div>
+        )}
       </div>
     </s.estiloCompetencias>
   );

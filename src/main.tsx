@@ -9,6 +9,7 @@ import { Color } from "./styles_Global/variaveis";
 import Competencias from "./shared/containers/Competencias";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import Projetos from "./shared/containers/projetos";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -81,6 +82,7 @@ createRoot(document.getElementById("root")!).render(
           }
         />
         <Competencias />
+        <Projetos />
       </section>
     </Provider>
   </StrictMode>

@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import navReducer from './reducer/mostarNav'
+import competenciReducer from './reducer/competencia'
 
 
 const store = configureStore({
     reducer: {
-        mostarNav: navReducer
+        mostarNav: navReducer,
+        mostarCompetencia: competenciReducer
     }
 })
 

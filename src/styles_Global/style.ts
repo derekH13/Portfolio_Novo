@@ -96,6 +96,10 @@ export const ButtonPrimary = styled.button`
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
     transition: all .4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 
   font-size: 18px;
   font-weight: 500;
@@ -108,8 +112,8 @@ export const ButtonPrimary = styled.button`
 `
 
 export const ButtonSmall = styled.button`
-  height: 30px;
-  padding: 0px 8px;
+  height: 35px;
+  width: 100%;
   border: none;
   border-radius: 6px;
   font-size: 18px;

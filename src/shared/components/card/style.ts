@@ -29,8 +29,8 @@ ${Texto}{
 }
 
 ${ButtonSmall}{
-right: 20px;
-position: absolute;
+
+
 }
 
 `
