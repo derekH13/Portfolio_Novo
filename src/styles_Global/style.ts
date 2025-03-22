@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Inter", sans-serif;
   }
 
+  html{
+  scroll-behavior: smooth;
+  }
+
   .ladding-page{
     background-color: ${Color.preto};
   }
@@ -26,6 +30,12 @@ export const GlobalStyle = createGlobalStyle`
 
   .interface{
     max-width: 1080px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .interface2{
+    max-width: 1480px;
     width: 95%;
     margin: 0 auto;
   }

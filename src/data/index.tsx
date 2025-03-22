@@ -22,39 +22,39 @@ export const frontendObj = [
   },
   {
     img: "/assets/images/frontend/frontend (6).png",
-    title: "CSS",
+    title: "BOOTSTRAP",
   },
   {
     img: "/assets/images/frontend/frontend (7).png",
-    title: "CSS",
+    title: "SASS",
   },
   {
     img: "/assets/images/frontend/frontend (8).png",
-    title: "CSS",
+    title: "STYLED",
   },
   {
     img: "/assets/images/frontend/frontend (9).png",
-    title: "CSS",
+    title: "TAILWIND",
   },
   {
     img: "/assets/images/frontend/frontend (10).png",
-    title: "CSS",
+    title: "ANGULAR",
   },
   {
     img: "/assets/images/frontend/frontend (11).png",
-    title: "CSS",
+    title: "GULP",
   },
   {
     img: "/assets/images/frontend/frontend (12).png",
-    title: "CSS",
+    title: "GRUNT",
   },
   {
     img: "/assets/images/frontend/frontend (13).png",
-    title: "CSS",
+    title: "VUE.JS",
   },
   {
     img: "/assets/images/frontend/frontend (14).webp",
-    title: "CSS",
+    title: "MOTION",
   },
 ];
 export const backendObj = [
@@ -68,22 +68,36 @@ export const backendObj = [
   },
   {
     img: "/assets/images/backend/backend (3).png",
-    title: "NODE",
+    title: "NODE.JS",
+  },
+];
+export const outrosObj = [
+  {
+    img: "/assets/images/outros/outros (1).png",
+    title: "FIGMA",
+  },
+  {
+    img: "/assets/images/outros/outros (2).png",
+    title: "DOCKER",
+  },
+  {
+    img: "/assets/images/outros/outros (3).png",
+    title: "GITHUB",
   },
 ];
 
 export const bancoObj = [
   {
     img: "/assets/images/banco/banco (1).png",
-    title: "PHP",
+    title: "POSTGRE",
   },
   {
     img: "/assets/images/banco/banco (2).png",
-    title: "PYTHON",
+    title: "SQL",
   },
   {
     img: "/assets/images/banco/banco (3).png",
-    title: "NODE",
+    title: "MYSQL",
   },
 ];
 

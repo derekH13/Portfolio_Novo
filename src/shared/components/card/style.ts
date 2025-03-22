@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Color } from "../../../styles_Global/variaveis";
-import { ButtonSmall, Texto } from "../../../styles_Global/style";
+import { ButtonPrimary, Texto } from "../../../styles_Global/style";
 
 export const estiloCard = styled.div`
 min-height: 300px;
@@ -28,8 +28,10 @@ ${Texto}{
     padding: 4px 0px 20px 0px;
 }
 
-${ButtonSmall}{
-
+${ButtonPrimary}{
+width: 100%;
+height: 40px;
+border-radius: 10px;
 
 }
 

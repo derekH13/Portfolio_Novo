@@ -25,7 +25,7 @@ nav{
     padding-top: 30px;
 
     .mobille{
-        @media(max-width: 690px){
+        @media(max-width: 775px){
         display: none;
     }
     }

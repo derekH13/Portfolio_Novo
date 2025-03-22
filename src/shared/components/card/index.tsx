@@ -1,5 +1,5 @@
 import * as s from "./style";
-import { ButtonSmall, Texto } from "../../../styles_Global/style";
+import { ButtonPrimary, Texto } from "../../../styles_Global/style";
 import { useDispatch } from "react-redux";
 import { mostarCompetencia } from "../../../redux/reducer/competencia";
 
@@ -20,9 +20,9 @@ export default function Card({ title, texto, img, area }: props) {
       <Texto>{texto}</Texto>
       <a href="#competencia">
         {" "}
-        <ButtonSmall onClick={() => dispatch(mostarCompetencia(area))}>
+        <ButtonPrimary onClick={() => dispatch(mostarCompetencia(area))}>
           ver mais..
-        </ButtonSmall>
+        </ButtonPrimary>
       </a>
     </s.estiloCard>
   );

@@ -6,7 +6,7 @@ import { projetosArray } from "../../../data";
 
 export default function Projetos() {
   return (
-    <s.estilo>
+    <s.estilo id="projetos">
       <div className="interface">
         <TitleSmall>
           Meus <span>Projetos</span>

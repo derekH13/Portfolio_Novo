@@ -9,7 +9,7 @@ export type propsSobre = {
 
 export default function Sobre({ reverse, texto, title, bgColor }: propsSobre) {
   return (
-    <s.estiloSobre reverse={reverse} bgColor={bgColor}>
+    <s.estiloSobre reverse={reverse} bgColor={bgColor} id="sobre">
       <div className="sobre">
         <div className="sobre_content">
           {title}

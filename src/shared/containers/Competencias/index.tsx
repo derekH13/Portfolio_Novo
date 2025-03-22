@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { TitleSmall } from "../../../styles_Global/style";
 import * as s from "./style";
-import { frontendObj, backendObj, bancoObj } from "../../../data";
+import { frontendObj, backendObj, bancoObj, outrosObj } from "../../../data";
 import { mostarCompetencia } from "../../../redux/reducer/competencia";
 import { useDispatch, useSelector } from "react-redux";
 import { RootReducer } from "../../../redux/store";
@@ -65,30 +65,12 @@ export default function Competencias() {
         )}
         {area == "outros" && (
           <div className="competencias_tecnologias">
-            <div className="competencias_tecnologias_card">
-              <img src="/assets/images/frontend/ui/ux (1).png" alt="" />
-              <h5>TYPESCRIPT</h5>
-            </div>
-            <div className="competencias_tecnologias_card">
-              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
-              <h5>TYPESCRIPT</h5>
-            </div>
-            <div className="competencias_tecnologias_card">
-              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
-              <h5>TYPESCRIPT</h5>
-            </div>
-            <div className="competencias_tecnologias_card">
-              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
-              <h5>TYPESCRIPT</h5>
-            </div>
-            <div className="competencias_tecnologias_card">
-              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
-              <h5>TYPESCRIPT</h5>
-            </div>
-            <div className="competencias_tecnologias_card">
-              <img src="/assets/images/ui/ux/ui/ux (1).png" alt="" />
-              <h5>TYPESCRIPT</h5>
-            </div>
+            {outrosObj.map((item) => (
+              <div className="competencias_tecnologias_card">
+                <img src={item.img} alt="" />
+                <h5>{item.title}</h5>
+              </div>
+            ))}
           </div>
         )}
         {area == "backend" && (

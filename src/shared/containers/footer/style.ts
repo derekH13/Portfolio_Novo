@@ -19,6 +19,30 @@ ul{
     gap: 20px;
     font-size: 26px;
     font-weight: 200;
+
+    @media(max-width: 600px){
+      gap: 12px;
+    }
+
+    &.nav{
+
+    @media(max-width: 600px){
+      flex-direction: column;
+      text-align: center;
+    }
+    }
+
+    .icon{
+
+    &.github:hover{
+      a{
+         color: ${Color.branco};
+      }
+    }
+        a{
+          color: ${Color.preto};
+        }
+    }
 }
 }
 

@@ -38,7 +38,7 @@ export default function CardProjetos({
           <Texto>{descricao}</Texto>
         </div>
         <div className="cardProjeto_content_btn">
-          <a href={link} target="_blank">
+          <a href={github} target="_blank">
             <ButtonPrimary>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ export default function CardProjetos({
               GitHub
             </ButtonPrimary>
           </a>
-          <a href={github} target="_blank">
+          <a href={link} target="_blank">
             <ButtonPrimary>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
