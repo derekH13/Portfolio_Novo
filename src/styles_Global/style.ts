@@ -75,6 +75,9 @@ export const Title = styled.h1<propsTitle>`
     @media(max-width: 1080px){
       font-size: 48px;
     }
+    @media(max-width: 680px){
+      font-size: 38px;
+    }
 `
 
 export const TitleSmall = styled(Title)`

@@ -2,18 +2,18 @@ import styled from "styled-components"
 import { Color } from "../../../styles_Global/variaveis"
 
 export const estiloCompetencias = styled.section`
-min-height: 100vh;
+min-height: 60vh;
 padding-top: 100px;
 
 .competencias_tecnologias{
     margin-top: 50px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(162px, 163PX));
     gap: 20px;
     
-    @media(max-width: 630px){
+    @media(max-width: 764px){
         bottom: auto;
         right: auto;
         margin: 0 auto;

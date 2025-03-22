@@ -41,8 +41,9 @@ background-color: ${Color.preto};
 
             
         @media(max-width: 1080px){
-                padding-top: 120px;
+            padding-top: 120px;
             flex-direction: column;
+            gap: 20px;
         }
     }
 

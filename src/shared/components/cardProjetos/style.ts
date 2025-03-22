@@ -136,6 +136,11 @@ img{
           border-color: rgb(87, 27, 184);
           color: rgb(87, 27, 184);
         }
+        &.postgre {
+          border-color: rgb(27, 184, 145);
+          color:rgb(27, 184, 145);
+        }
+
     }
 }
 }

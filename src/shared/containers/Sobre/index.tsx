@@ -5,9 +5,18 @@ export type propsSobre = {
   texto?: React.ReactNode;
   title?: React.ReactNode;
   bgColor: string;
+  img?: string;
+  eu?: boolean;
 };
 
-export default function Sobre({ reverse, texto, title, bgColor }: propsSobre) {
+export default function Sobre({
+  reverse,
+  texto,
+  title,
+  bgColor,
+  img,
+  eu,
+}: propsSobre) {
   return (
     <s.estiloSobre reverse={reverse} bgColor={bgColor} id="sobre">
       <div className="sobre">
@@ -17,8 +26,10 @@ export default function Sobre({ reverse, texto, title, bgColor }: propsSobre) {
         </div>
       </div>
       <div className="container_images">
-        <img src="/assets/images/image 11.png" alt="" />
-        <img src="/assets/images/eu (1).png" alt="" className="sobre_eu" />
+        <img src={img} alt="" />
+        {eu && (
+          <img src="/assets/images/eu (1).png" alt="" className="sobre_eu" />
+        )}
       </div>
     </s.estiloSobre>
   );
