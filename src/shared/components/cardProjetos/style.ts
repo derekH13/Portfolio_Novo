@@ -140,6 +140,14 @@ img{
           border-color: rgb(27, 184, 145);
           color:rgb(27, 184, 145);
         }
+        &.python {
+          border-color: rgb(221, 150, 44);
+          color:rgb(221, 150, 44);
+        }
+        &.next {
+          border-color: rgb(255, 255, 255);
+          color:rgb(255, 255, 255);
+        }
 
     }
 }
